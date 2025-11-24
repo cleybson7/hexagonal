@@ -9,5 +9,6 @@ public interface UsuarioRepositoryOut {
     Usuario salvar(Usuario usuario);
     List<Usuario> buscarTodos();
     Usuario buscarPorId(Long id);
+    Usuario atualizar(Long id, Usuario usuario);
     void deletarPorId(Long id);
 }

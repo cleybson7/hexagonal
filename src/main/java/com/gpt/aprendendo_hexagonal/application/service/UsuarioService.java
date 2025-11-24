@@ -16,26 +16,28 @@ public class UsuarioService implements UsuarioCriarUseCase, UsuarioBuscarUseCase
 
     @Override
     public Usuario criar(String nome, String email, String senha) {
-        return null;
+        Usuario usuario = new Usuario(nome, email, senha);
+        return repository.salvar(usuario);
     }
 
     @Override
     public Usuario atualizar(Long id, String nome, String email, String senha) {
-        return null;
+        Usuario usuario = new Usuario(nome, email, senha);
+        return repository.atualizar(id, usuario);
     }
 
     @Override
     public Usuario buscarPorId(Long id) {
-        return null;
+        return repository.buscarPorId(id);
     }
 
     @Override
     public List<Usuario> listarTodos() {
-        return List.of();
+        return repository.buscarTodos();
     }
 
     @Override
     public void deletar(Long id) {
-
+        repository.deletarPorId(id);
     }
 }
