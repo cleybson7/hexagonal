@@ -4,7 +4,7 @@ import com.gpt.aprendendo_hexagonal.application.domain.Usuario;
 
 import java.util.List;
 
-public interface UsuarioRepositoryOut {
+public interface UsuarioRepositoryPort {
 
     Usuario salvar(Usuario usuario);
     List<Usuario> buscarTodos();

@@ -2,11 +2,11 @@ package com.gpt.aprendendo_hexagonal.adapter.out.jpa;
 
 import com.gpt.aprendendo_hexagonal.adapter.out.mapper.UsuarioMapper;
 import com.gpt.aprendendo_hexagonal.application.domain.Usuario;
-import com.gpt.aprendendo_hexagonal.application.port.out.UsuarioRepositoryOut;
+import com.gpt.aprendendo_hexagonal.application.port.out.UsuarioRepositoryPort;
 
 import java.util.List;
 
-public class UsuarioRepositoryAdapter implements UsuarioRepositoryOut {
+public class UsuarioRepositoryAdapter implements UsuarioRepositoryPort {
 
     private final UsuarioJpaRepository jpa;
 

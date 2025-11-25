@@ -2,15 +2,15 @@ package com.gpt.aprendendo_hexagonal.application.service;
 
 import com.gpt.aprendendo_hexagonal.application.domain.Usuario;
 import com.gpt.aprendendo_hexagonal.application.port.in.*;
-import com.gpt.aprendendo_hexagonal.application.port.out.UsuarioRepositoryOut;
+import com.gpt.aprendendo_hexagonal.application.port.out.UsuarioRepositoryPort;
 
 import java.util.List;
 
 public class UsuarioService implements UsuarioCriarUseCase, UsuarioBuscarUseCase, UsuarioListarUseCase, UsuarioAtualizarUseCase, UsuarioDeletarUseCase {
 
-    private final UsuarioRepositoryOut repository;
+    private final UsuarioRepositoryPort repository;
 
-    public UsuarioService(UsuarioRepositoryOut repository) {
+    public UsuarioService(UsuarioRepositoryPort repository) {
         this.repository = repository;
     }
 
